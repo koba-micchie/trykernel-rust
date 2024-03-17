@@ -6,7 +6,7 @@ pub const TMO_POL: i32 = 0;
 // Infinit wait 
 pub const TMO_FEVR: i32 = -1;
 
-//タスク生成情報
+// information to create  task
 pub struct TCtsk {
     // Task attribute 
     pub tskatr: ATR,
