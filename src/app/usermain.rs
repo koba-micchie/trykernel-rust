@@ -28,7 +28,7 @@ static mut CSEM: TCsem = TCsem {
 static mut TSKSTK_BTN: [u8; 4096] = [0; 4096];
 static mut TSKID_BTN: ID = 0;
 
-// ボタン処理タスク
+// task to process button
 fn task_btn() {
 
     debug("Start task_btn\r\n");
@@ -85,7 +85,7 @@ fn task_btn() {
     }
 }
 
-// LED1 処理タスク
+// task to process LED1
 static mut TSKSTK_LED1: [u8; 1024] = [0; 1024];
 static mut TSKID_LED1: ID = 0;
 fn task_led1() {
@@ -150,7 +150,7 @@ fn task_led1() {
     }
 }
 
-// LED2 処理タスク
+// task to process LED2
 static mut TSKSTK_LED2: [u8;1024] = [0;1024];
 static mut TSKID_LED2: ID = 0;
 fn task_led2() {

@@ -69,10 +69,6 @@ SECTIONS
     __erodata = .;
   } > FLASH
 
-  .ARM.extab : {
-    *(.ARM.extab* .gnu.linkonce.armextab.*)
-  } > ROM
-
   .data : ALIGN(4)
   {
     . = ALIGN(4);
